@@ -1,0 +1,11 @@
+{
+  "name": "scripts-postgres",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gh-unab:danielmendezf/segunda_entrega_bases_datos.git",
+  "author": "crepu <danielmendez310@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "supabase": "^2.116.0"
+  }
+}
