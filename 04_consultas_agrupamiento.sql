@@ -1,20 +1,10 @@
 -- ============================================================
--- VTDF103 — Informe Proyecto N°2 (Semana 12)
--- Caso 2: Plataforma de Gestión de Proyectos de Construcción
 -- Script 04: Consultas con tres o más tablas, funciones de grupo
 --            y cláusula HAVING
--- Motor: SQLite 3
 -- ============================================================
 
 -- ------------------------------------------------------------
--- Consulta 4
--- Objetivo: Determinar los materiales más utilizados en los
---           proyectos durante el último año.
--- Tablas: Materiales, Uso_Materiales, Proyectos
--- Funciones de grupo: SUM, COUNT
--- HAVING: SUM(cantidad) > 0
--- Justificación: Identifica materiales de alta rotación para
---                negociación de precios con proveedores.
+-- Consulta 1
 -- ------------------------------------------------------------
 SELECT
     M.id_material,
@@ -31,14 +21,7 @@ HAVING SUM(U.cantidad) > 0
 ORDER BY cantidad_total_usada DESC;
 
 -- ------------------------------------------------------------
--- Consulta 5
--- Objetivo: Encontrar los empleados que han participado en más
---           de un proyecto y la cantidad total de horas trabajadas.
--- Tablas: Empleados, Asignacion_Empleados, Proyectos
--- Funciones de grupo: COUNT, SUM
--- HAVING: COUNT(DISTINCT id_proyecto) > 1
--- Justificación: Detecta empleados multitarea para análisis de
---                bonos y distribución de carga laboral.
+-- Consulta 2
 -- ------------------------------------------------------------
 SELECT
     E.rut,
@@ -54,14 +37,7 @@ HAVING COUNT(DISTINCT A.id_proyecto) > 1
 ORDER BY total_proyectos DESC, total_horas_trabajadas DESC;
 
 -- ------------------------------------------------------------
--- Consulta 6
--- Objetivo: Identificar los proveedores cuyo costo total de
---           materiales suministrados supere los $1.000.000.
--- Tablas: Proveedores, Uso_Materiales, Materiales
--- Funciones de grupo: SUM, COUNT
--- HAVING: SUM(cantidad * costo_unitario) > 1000000
--- Justificación: Clasifica proveedores clave por volumen
---                financiero transaccionado.
+-- Consulta 3
 -- ------------------------------------------------------------
 SELECT
     Prov.rut_proveedor,

@@ -65,5 +65,4 @@ Este material fue generado con asistencia de IA. Antes de entregarlo, el grupo d
 
 1. Revisar y comprender cada script.
 2. Adaptar nombres, datos y decisiones si el docente dio retroalimentación específica.
-3. Completar el informe final en la plantilla `vtdf103_s12_entregable.docx` con portada, roles, bibliografía y conclusiones.
-4. Redactar personalmente las conclusiones, la reflexión sobre el uso de IA y la distribución de roles.
+3. Completar la portada del entregable (`vtdf103_s12_entregable.docx`) con los datos del grupo.

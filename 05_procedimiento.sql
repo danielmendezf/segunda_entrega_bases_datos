@@ -1,22 +1,7 @@
 -- ============================================================
--- VTDF103 — Informe Proyecto N°2 (Semana 12)
--- Caso 2: Plataforma de Gestión de Proyectos de Construcción
 -- Script 05: Procedimiento almacenado / consulta equivalente
--- Motor: SQLite 3
 -- ============================================================
-
--- ------------------------------------------------------------
--- NOTA IMPORTANTE SOBRE SQLITE
--- ------------------------------------------------------------
--- SQLite no implementa procedimientos almacenados (STORED
--- PROCEDURES) como otros motores (PostgreSQL, MySQL o SQL
--- Server). Por esta razón, el requerimiento se resuelve con una
--- consulta parametrizada equivalente que cumple el mismo
--- objetivo: recibir un id_proyecto y retornar el presupuesto
--- total invertido en materiales hasta la fecha.
---
--- Si en el futuro se migra a PostgreSQL, la función equivalente
--- sería:
+-- Procedimiento para postgresql
 --
 -- CREATE OR REPLACE FUNCTION sp_presupuesto_proyecto(p_id INT)
 -- RETURNS TABLE (...) AS $$
@@ -34,14 +19,7 @@
 -- ------------------------------------------------------------
 
 -- ------------------------------------------------------------
--- Consulta equivalente al procedimiento almacenado
--- Objetivo: Calcular el presupuesto total invertido en materiales
---           de un proyecto específico hasta la fecha.
--- Tablas involucradas: Proyectos, Uso_Materiales, Materiales
--- Función de grupo: SUM
--- Parámetro: id_proyecto (cambiar el valor 1 por el ID deseado)
--- Justificación: Agiliza la emisión de estados de pago y el
---                control de costos de una obra en particular.
+-- Consulta para sqlite
 -- ------------------------------------------------------------
 SELECT
     P.id_proyecto,

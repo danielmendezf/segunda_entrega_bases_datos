@@ -5,7 +5,7 @@
 **Entrega:** Fase 2 (implementación SQL)  
 **Fecha de elaboración:** 2026-09-01
 
-> **Nota de transparencia:** Este documento y los scripts SQL asociados fueron elaborados con asistencia de IA generativa. Deben ser revisados, comprendidos y adaptados por el grupo antes de ser entregados como trabajo propio. En particular, las conclusiones personales, la distribución de roles y la reflexión sobre el uso de IA deben ser redactadas por los integrantes.
+> **Nota de transparencia:** Este documento y los scripts SQL asociados fueron elaborados con asistencia de IA generativa. Deben ser revisados, comprendidos y adaptados por el grupo antes de ser entregados como trabajo propio.
 
 ---
 
@@ -141,4 +141,3 @@ La consulta se encuentra en `05_procedimiento.sql` y puede adaptarse a PostgreSQ
 
 - SQLite no permite procedimientos almacenados. Si el docente exige su uso, se recomienda migrar el esquema a PostgreSQL o MySQL, manteniendo la misma estructura de tablas.
 - El cálculo del presupuesto actual solo considera costos de materiales. Para incluir mano de obra, se podría extender la consulta con la tabla `Asignacion_Empleados` y `Empleados.sueldo_hora`.
-- Las conclusiones del informe, la distribución de roles y la reflexión sobre el uso de IA deben ser completadas por los integrantes del grupo.

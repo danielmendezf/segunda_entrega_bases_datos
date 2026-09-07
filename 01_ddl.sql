@@ -1,11 +1,5 @@
 -- ============================================================
--- VTDF103 — Informe Proyecto N°2 (Semana 12)
--- Caso 2: Plataforma de Gestión de Proyectos de Construcción
 -- Script 01: Creación de base de datos y tablas (DDL)
--- Motor: SQLite 3
--- ============================================================
--- Este script elimina y recrea todas las tablas del esquema,
--- manteniendo el modelo original aprobado en la Fase 1.
 -- ============================================================
 
 -- ------------------------------------------------------------

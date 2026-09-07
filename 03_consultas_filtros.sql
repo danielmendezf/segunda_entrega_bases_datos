@@ -1,20 +1,10 @@
 -- ============================================================
--- VTDF103 — Informe Proyecto N°2 (Semana 12)
--- Caso 2: Plataforma de Gestión de Proyectos de Construcción
 -- Script 03: Consultas con tres o más tablas, filtros y
 --            operaciones lógicas
--- Motor: SQLite 3
 -- ============================================================
 
 -- ------------------------------------------------------------
 -- Consulta 1
--- Objetivo: Obtener los ingenieros que están asignados a
---           proyectos que se encuentran actualmente en ejecución.
--- Tablas: Empleados, Asignacion_Empleados, Proyectos
--- Filtros: especialidad = 'Ingeniería' AND estado = 'En ejecución'
--- Operador lógico: AND
--- Justificación: Permite identificar al personal de ingeniería
---                activo en obras para planificación de recursos.
 -- ------------------------------------------------------------
 SELECT
     E.rut,
@@ -31,14 +21,6 @@ WHERE E.especialidad = 'Ingeniería'
 
 -- ------------------------------------------------------------
 -- Consulta 2
--- Objetivo: Listar materiales, proveedores y costos asociados a
---           proyectos comerciales con más de 100 colaboradores.
--- Tablas: Uso_Materiales, Materiales, Proveedores,
---         Proyectos_Comerciales, Proyectos
--- Filtros: num_colaboradores > 100 AND costo_unitario > 5000
--- Operador lógico: AND
--- Justificación: Evalúa la cadena de suministro de proyectos
---                comerciales de gran envergadura.
 -- ------------------------------------------------------------
 SELECT
     M.nombre_material,
@@ -59,11 +41,6 @@ WHERE PC.num_colaboradores > 100
 -- Consulta 3
 -- Objetivo: Obtener las etapas pendientes o en progreso de los
 --           proyectos residenciales, ordenadas por fecha de inicio.
--- Tablas: Proyectos, Proyectos_Residenciales, Etapas_Proyecto
--- Filtros: estado_etapa IN ('Pendiente', 'En progreso')
--- Operadores lógicos: IN, AND
--- Justificación: Monitorea cuellos de botella en obras de
---                vivienda para priorizar recursos operativos.
 -- ------------------------------------------------------------
 SELECT
     P.nombre AS proyecto,

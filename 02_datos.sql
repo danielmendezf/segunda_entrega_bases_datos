@@ -1,12 +1,5 @@
 -- ============================================================
--- VTDF103 — Informe Proyecto N°2 (Semana 12)
--- Caso 2: Plataforma de Gestión de Proyectos de Construcción
 -- Script 02: Inserción de datos de prueba (DML)
--- Motor: SQLite 3
--- ============================================================
--- Se incluyen al menos 10 registros por tabla principal.
--- Los subtipos Proyectos_Comerciales y Proyectos_Residenciales
--- tienen 10 registros cada uno, distribuidos entre 20 proyectos.
 -- ============================================================
 
 -- ------------------------------------------------------------
